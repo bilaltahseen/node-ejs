@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+        <link href="/css/styles.css" rel="stylesheet" type="text/css">
+        <title>E-Commerce Website</title>
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+        <div class="product-grid">
+            <% products.forEach(function(product){ %>
+                <div class="product-card">
+                    <img src=<%=product.image %>
+                    alt=<%=product.name %>>
+                    <h2><%=product.name %></h2>
+                    <p><%=product.description %></p>
+                    <p class="price">$ <%=product.price %></p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <% }) %>
+        </div>
+        <div class="container">
+            <div class="home-content">
+                <h1>Explore our wide range of products.</h1>
+            </div>
+            <a href="/products" class="explore-button">EXPLORE MORE</a>
+        </div>
+</body>
+
+</html>

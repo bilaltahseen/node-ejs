@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav h1 {
+    color: rgb(2, 94, 199);
+    margin: 10px 0 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b6b6b6;
+    font-size: 15px;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:invalid {
+    background-color: rgb(255, 162, 162);
+}
+
+textarea:invalid {
+    background-color: rgb(255, 162, 162);
+}
+
+.gender-radio {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

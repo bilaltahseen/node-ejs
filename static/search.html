@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <h1>OMOZONE</h1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="search.html">Search</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-container">
+        <h1>Search Products</h1>
+        <form class="search-form" action="#" method="post">
+            <input type="text" id="search-input" name="search" placeholder="Enter a product name">
+            <button type="submit">Search</button>
+        </form>
+
+    <div class="filter-container">
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="none">None</option>
+                <option value="ascending">Price Ascending</option>
+                <option value="descending">Price Descending</option>
+                <option value="newest">Newest Arrival</option>
+                <option value="discount">Discount Offers</option>
+            </select>
+    </div>
+        
+
+        <table class="search-results">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dummy data for demonstration -->
+                <tr>
+                    <td>ASUS Vivobook S 15</td>
+                    <td>OLED BAPE Edition (K5504)</td>
+                    <td>$1,099.99</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 Pro Max</td>
+                    <td>Titanium, 512 GB</td>
+                    <td>$1,519</td>
+                </tr>
+                <tr>
+                    <td>Samsung Q80C</td>
+                    <td>55" QLED 4K</td>
+                    <td>$1,333</td>
+                </tr>
+                <!-- Add more rows for additional products -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+        <link href="/css/search.css" rel="stylesheet" type="text/css">
+        <title>Search Page</title>
+
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+        <div class="search-container">
+            <h1>Search Products</h1>
+            <form class="search-form" action="/search" method="get">
+                <input type="text" id="search-input" name="name" placeholder="Enter a product name">
+                <button type="submit">Search</button>
+
+                <div class="filter-container">
+                    <br />
+                    <label for="filter">Sort by:</label>
+                    <select name="sortBy" id="filter">
+                        <option value="none">None</option>
+                        <option value="price-asc">Price Ascending</option>
+                        <option value="price-desc">Price Descending</option>
+                        <option value="createdAt-desc">Newest Arrival</option>
+                    </select>
+                </div>
+            </form>
+
+
+            <table class="search-results">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dummy data for demonstration -->
+                    <% products.forEach(function(product){ %>
+                        <tr>
+                            <td>
+                                <%=product.name %>
+                            </td>
+                            <td>
+                                <%=product.description %>
+                            </td>
+                            <td>$ <%=product.price %>
+                            </td>
+                        </tr>
+                        <% }) %>
+
+                            <!-- Add more rows for additional products -->
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>
